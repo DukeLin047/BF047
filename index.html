@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="/js/wow.min.js"></script>
+    <script src="/js/js.js"></script>
+
+    <title>大逸嚴選</title> 
+	<link rel="shortcut icon" href="/images/logo.jpg" style="border-radius:50%;"><!--網頁瀏覽器最上方的圖片--->
+	<link rel="stylesheet" href="/css/style.css/style.css">
+  </head>
+  <body> 
+	<!--   	********************************1.1******************************************* -->
+  	<header>	  
+		<section class="bg-width" style="height: 35px;">
+			<div class="container" >
+				<div class="text-right" > <!-- 文字移動到右邊 -->
+					<a href="https://www.facebook.com/%E5%A4%A7%E9%80%B8%E5%9A%B4%E9%81%B8-109339320480163/?ref=page_internal">
+						<i class="fab fa-facebook-square my-1" style="font-size:30px; color:#1E90FF;"></i>
+					</a>
+
+					<a href="https://timeline.line.me/user/_dYoARng2zGdnHGPVaWkOznmfp28_Z2CRuUeagjs?utm_medium=windows&utm_source=desktop&utm_campaign=Profile">
+						<i class="fab fa-line mx-1"  style="font-size:30px; color:#008000;"></i> 		
+					</a>
+				</div>
+			</div>
+		</section>
+	<!--   	********************************2.navbar*********************************** -->
+	  	<section class="bg-dark">
+	  		<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				  <a class="navbar-brand" href="index.html" >
+					  <img src="/images/logo.jpg" alt="" style="width: 50px; border-radius: 50%;" class="fa-2x wow  animate__heartBeat" data-wow-duration="2s" data-wow-delay="1s"data-wow-iteration="50">
+
+					<!-- <i class="fas fa-dice-d20 fa-2x wow  animate__heartBeat" data-wow-duration="2s" data-wow-delay="1s"data-wow-iteration="50"></i>			  		 -->
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">關於我們 <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">產品資訊</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">線上訂購</a>
+				      </li>
+				     <li class="nav-item">
+				        <a class="nav-link" href="#">聯絡我們</a>
+				      </li>
+				    </ul>
+				    <div>
+				    	<button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#loginModal">登入</button>
+				    	<button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#registerModal">註冊</button>
+				    </div>
+				  </div>
+				</nav>
+	  		</div>
+	  	</section>  
+  	</header>
+  	<!--   	********************************2.loginModal**********會員登入**************** -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" 		
+		aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header " style="background-color: #00008B;">         
+	        <h5 class="modal-title text-white font-weight-bold" id="exampleModalLabel">會員登入</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #ffffff;">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="form-group">
+	        	<label for="">帳號</label>
+	        	<input type="email" class="form-control" placeholder="請輸入Email帳號">
+	        </div>
+	        <div class="form-group">
+	        	<label for="">密碼</label>
+	        	<input type="password" class="form-control">
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	      	<a href="#" class="mr-auto" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">註冊去!!!</a>
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+	        <button type="button" class="btn btn-primary">確認</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+  	<!--   	********************************2-1.registerModal*****會員註冊**************** -->
+	<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" 
+		aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header" style="background-color: #00008B;">
+	        <h5 class="modal-title text-white font-weight-bold" id="exampleModalLabel">會員註冊</h5><!-- font-weight-bold = 文字粗體-->
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #ffffff;">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="row">
+	      		<div class="col-md-6">
+	      			<p>速度今後傷心然後人士年度這時允許共同夢想排名信箱微笑金屬，每日日前查詢。</p>
+	      			<p>全國硬盤技術解決方案服裝房間校園舉辦時期只有下來，這裡金融鼓勵都是果然。</p>
+	      			<p>將在本科蘇州數碼皮膚浙江多少上一，還不也許自我連載現實答案利潤這裡註冊。</p>
+	      			<p>語文內部那位印象皮膚二級望着，明年風景求助總是我家腦袋，患者內地朋友日。</p>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+					  <label class="form-check-label" for="defaultCheck1">
+					    已閱讀會員條款
+					  </label>
+					</div>	      			
+	      		</div>
+	      		<div class="col-md-6">
+			      	<div class="form-group">
+			        	<label for="">暱稱</label>
+			        	<input type="text" class="form-control">
+			        </div>
+			        <div class="form-group">
+			        	<label for="">帳號</label>
+			        	<input type="email" class="form-control" placeholder="請輸入Email帳號">
+			        </div>
+			        <div class="form-group">
+			        	<label for="">密碼</label>
+			        	<input type="password" class="form-control">
+			        </div>
+			        <div class="form-group">
+			        	<label for="">確認密碼</label>
+			        	<input type="password" class="form-control">
+			        </div>	      			
+	      		</div>
+	      	</div>
+
+	      </div>
+	      <div class="modal-footer">
+	      	<a href="#"data-toggle="modal" data-target="#loginModal" data-dismiss="modal" class="mr-auto">登入去!!!</a>
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+	        <button type="button" class="btn btn-primary">確認</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+  	<!--   	********************************3.carousel*********************************** -->
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="#" class="d-block w-100 bg-cover active  " alt="..." style="background-image: url(/images/17.jpg); height: 83vh">
+			</div>
+			<div class="carousel-item">
+				<img src="#" class="d-block w-100 bg-cover" alt="..." style="background-image: url(/images/8.jpg); height: 83vh">
+			</div>
+			<div class="carousel-item">
+				<img src="#" class="d-block w-100 bg-cover" alt="..." style="background-image: url(/images/10.jpg); height: 83vh">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<!--   	********************************4-1照片區*********************************** -->
+	<div class="container text-center my-5" >
+		<div class="row">
+			<div class="col-6 wow animate__animated animate__backInLeft" data-wow-duration="2s" data-wow-delay="0.1s"data-wow-iteration="1">
+				<div class="card mb-3" style="max-width: 1000px;">
+					<div class="row no-gutters">
+						<div class="col-md-6 " >
+							<img src="/images/1-1.jpg" alt="..." style="max-width: 210px">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body">
+								<h5 class="card-title">產地證明1</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+									content. This content is a little bit longer.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="col-6 wow animate__animated animate__backInRight" data-wow-duration="2s" data-wow-delay="0.1s"data-wow-iteration="1">
+				<div class="card mb-3" style="max-width: 1000px;">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<img src="/images/1-2.jpg" alt="..." style="max-width: 210px">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body">
+								<h5 class="card-title">產地證明2</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional
+									content. This content is a little bit longer.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 wow animate__animated animate__backInLeft" data-wow-duration="2s" data-wow-delay="0.1s"data-wow-iteration="1">
+				<div class="card mb-3" style="max-width: 1000px;">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<img src="/images/1-3.jpg" alt="..." style="max-width:210px;">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body">
+								<h5 class="card-title">產地證明3</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional
+									content. This content is a little bit longer.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 wow animate__animated animate__backInRight" data-wow-duration="2s" data-wow-delay="0.1s"data-wow-iteration="1">
+				<div class="card mb-3" style="max-width: 1000px;">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<img src="/images/1-4.jpg" alt="..." style="max-width: 210px">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body">
+								<h5 class="card-title">產地證明4</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+									additional
+									content. This content is a little bit longer.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--   	********************************4-2影片區*********************************** -->
+	<div class="text-center" >
+		<span style="font-family:DFKai-sb; font-size: 60px; color: #00008B;">感謝時尚玩家真心推薦</span>
+	</div>
+	<div class="box-info">
+		<div class="embed-responsive embed-responsive-16by9 mt-1 ">
+			<iframe class="embed-responsive-item" src="/images/videl.mp4"
+				allowfullscreen="" allow="autoplay" style="height: 100%;">
+			</iframe>
+		</div>		
+	</div>
+  	<!--   	********************************5.*********************************** -->
+	<section class="bg-active"> <!-- bg-info = 背景顏色為info -->
+		<div class="container">
+			<div class="row pt-3"> <!-- pt-3 = 內距3 -->
+				<div class="col-md-4">
+					<div class="text p-3 text-center"> <!-- text-center = 文字至中 -->
+						<i class="fab fa-empire fa-8x text-dark wow animate__animated animate__zoomInLeft" data-wow-duration="2s" data-wow-delay="1s"data-wow-iteration="1"></i>
+						<h3 class="text-secondary font-weight-bold my-3">職人手作</h3>
+						<p class="text-white">成功全體一切都也會認真責任編輯詳細，特別是當然哪些你是而已方面完成動作還，不是很做好再說東北親自詳細內容跟我商務不錯魔獸一份身材求助一，浙。</p>	 <!-- text-white = 文字白色 -->					
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="text p-3 text-center">
+						<i class="fab fa-first-order fa-8x text-dark wow animate__animated animate__zoomInDown" data-wow-duration="2s" data-wow-delay="1s"data-wow-iteration="1"></i>
+						<h3 class="text-secondary font-weight-bold my-3">真空即食</h3>
+						<p class="text-white">成功全體一切都也會認真責任編輯詳細，特別是當然哪些你是而已方面完成動作還，不是很做好再說東北親自詳細內容跟我商務不錯魔獸一份身材求助一，浙。</p>						
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="text p-3 text-center">
+						<i class="fab fa-first-order-alt fa-8x text-dark wow animate__animated animate__zoomInRight" data-wow-duration="2s" data-wow-delay="1s"data-wow-iteration="1"></i>
+						<h3 class="text-secondary font-weight-bold my-3">歡迎團購</h3>
+						<p class="text-white">成功全體一切都也會認真責任編輯詳細，特別是當然哪些你是而已方面完成動作還，不是很做好再說東北親自詳細內容跟我商務不錯魔獸一份身材求助一，浙。</p>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  	<!--   	********************************6.*********************************** -->
+  	<section style="position: relative;">
+		<div class="row">
+			<div class="col-md-5 bg-cover mt-5 mx-5" style="position: absolute;background-image: url(/images/紅酒番茄-1.jpg);top: 0;bottom: 0; border-radius: 20%;"></div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-end"><!-- justify-content-end = 右邊文字靠右-->
+				<div class="col-md-7 py-5 mytext">
+					<h3 class="font-weight-bold">大逸嚴選</h3><!-- font-weight-bold = 文字粗體 -->
+					<p class="font-weight-bold">
+						🍴西餐廳 🇯🇵日式料理御用食材<br>
+						一包15粒真空包裝<br>
+						本產不添加防腐劑<br>
+						保存期限：需冷凍3個月<br>
+					</p>
+					<button class="btn btn-outline-info">
+						<a href="https://www.facebook.com/%E5%A4%A7%E9%80%B8%E5%9A%B4%E9%81%B8-109339320480163">前往facebook粉絲團</a>
+					</button>
+					<div class="row mt-3"> <!-- mt-3 = 下方內距3 -->
+						<div class="col-md-6">
+							<h3 class="font-weight-bold">🍷 紅酒番茄</h3>
+							<p class="font-weight-bold">天然濃郁的果香、微醺淡雅的迷人酒香、酒漬冰釀後的鮮甜滋味、飽滿扎實又多汁的清爽口感、帶給您又甜又醇的多重享受！</p>
+						</div>
+						<div class="col-md-6">
+							<h3 class="font-weight-bold">🌸梅子番茄</h3>
+							<p class="font-weight-bold">純手工除去多餘蕃茄紅色外套後，冰鎮後的扎實果肉，經過48小時以上浸漬在綜合梅果醬汁裡,果肉充分吸附梅果獨有的酸甜味，獨有的風味讓您無法忘卻。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  	<!--   	********************************7.*********************************** -->
+  	<section>
+		<div class="container my-5">
+			<h2 class="font-weight-bold text-center my-3">特價方案介紹</h2><!-- font-weight-bold = 字體變粗 ,text-center = 字體置中 -->
+			<div class="row mt-3">
+				<div class="col-md-6">
+					<div class="d-flex">
+						<i class="fab fa-affiliatetheme fa-5x mr-4 mt-3"></i>
+						<div>
+							<h3>動作試試左右她們竟然</h3>
+							<p>版權區域都要不知先進分配動漫樓上尺寸球員方面呼，有什麼查詢必須各項詳細信息整合即將今日現金推動角色內地發，容量詳細內容監督避免說完把你友情利益同學措，採訪位於工人傳來修改實力共享版中間都要我也驅，技。</p>
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="d-flex">
+						<i class="fab fa-affiliatetheme fa-5x mr-4 mt-3"></i> <!-- fa-5x = 放大5x --><!-- mr-4 = 右邊內距 4,mt-3 =上方內距3 -->
+						<div>
+							<h3>動作試試左右她們竟然</h3>
+							<p>版權區域都要不知先進分配動漫樓上尺寸球員方面呼，有什麼查詢必須各項詳細信息整合即將今日現金推動角色內地發，容量詳細內容監督避免說完把你友情利益同學措，採訪位於工人傳來修改實力共享版中間都要我也驅，技。</p>
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-6">
+					<div class="d-flex">
+						<i class="fab fa-affiliatetheme fa-5x mr-4 mt-3"></i>
+						<div>
+							<h3>動作試試左右她們竟然</h3>
+							<p>版權區域都要不知先進分配動漫樓上尺寸球員方面呼，有什麼查詢必須各項詳細信息整合即將今日現金推動角色內地發，容量詳細內容監督避免說完把你友情利益同學措，採訪位於工人傳來修改實力共享版中間都要我也驅，技。</p>
+						</div>						
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="d-flex">
+						<i class="fab fa-affiliatetheme fa-5x mr-4 mt-3"></i>
+						<div>
+							<h3>動作試試左右她們竟然</h3>
+							<p>版權區域都要不知先進分配動漫樓上尺寸球員方面呼，有什麼查詢必須各項詳細信息整合即將今日現金推動角色內地發，容量詳細內容監督避免說完把你友情利益同學措，採訪位於工人傳來修改實力共享版中間都要我也驅，技。</p>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  	<!--   	********************************8.*********************************** -->
+	<section style="position: relative;">
+		<div class="container my-5">
+			<div class="row">
+				<div class="col-md-7 mytext" style="z-index: 10"> <!-- style="z-index: 10" = 把文字放前面 -->
+					<dl class="row">
+					  <dt class="col-sm-3">服務項目01</dt>
+					  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+					  <dt class="col-sm-3">服務項目02</dt>
+					  <dd class="col-sm-9">
+					    <p>Definition for the term.</p>
+					    <p>And some more placeholder definition text.</p>
+					  </dd>
+
+					  <dt class="col-sm-3">服務項目03</dt>
+					  <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+					  <dt class="col-sm-3 text-truncate">服務項目04</dt>
+					  <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+					  <dt class="col-sm-3">服務項目05</dt>
+					  <dd class="col-sm-9">
+					    <dl class="row">
+					      <dt class="col-sm-4">Nested definition list</dt>
+					      <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+					    </dl>
+					  </dd>
+					</dl>
+				</div>
+			</div>
+		</div>	
+		<div class="row justify-content-end">
+			<div class="col-md-5 bg-cover" 
+				style="position: absolute;top: 0;bottom: 0;background-image: url(../images/3-3.jpg);"></div>
+		</div>
+	</section>
+  	<!--   	********************************9.*********************************** -->
+  	<section>
+  		<div class="contaioner">
+  			<div class="row">
+  				<div class="col-md-6">
+  					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14560.365550356555!2d120.60847195!3d24.16852755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e048d342aa9%3A0x2b6f18a6783fa3b!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5Lit5b2w5oqV5YiG572y77yI6Ie65Lit6IG36KiT5bGA77yJ!5e0!3m2!1szh-TW!2stw!4v1617764395311!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  				</div>
+  				<div class="col-md-6">
+  					<div class="form-group">		<!-- form-group 跟 form-control 兩個是一組的-->
+  						<label for="">姓名</label>
+  						<input type="text" class="form-control">
+  					</div>
+  					<div class="form-group">
+  						<label for="">電話</label>
+  						<input type="text" class="form-control">
+  					</div>
+  					<div class="form-group">
+  						<label for="">EMAIL</label>
+  						<input type="text" class="form-control">
+  					</div>
+  					<div class="form-group">
+  						<label for="">人數</label>
+  						<input type="text" class="form-control">
+  					</div>
+  					<div class="form-check"> <!-- https://getbootstrap.com/docs/4.6/components/forms/ -->
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+					  <label class="form-check-label" for="exampleRadios1">
+					    預約洽談
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+					  <label class="form-check-label" for="exampleRadios2">
+					    預約取貨
+					  </label>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-secondary">取消</button> <!-- class="btn btn-secondary" = 按鈕顏色 -->
+						<button class="btn btn-primary">送出</button>						
+					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  	<!--   	********************************10.*********************************** -->
+  	<section>
+		<div class="row mt-5">
+			<div class="col-md-6 bg-cover" style="background-image: url(/images/紅酒番茄-1.jpg);">
+				<div class="row">
+					<div class="col-md-7 my-5 text-white ml-5 p-3" style="background-color: rgba(0,0,0,0.3);">
+						<small class="text-danger font-weight-bold">加入我們</small>
+						<h2 class="font-weight-bold">業務部經理一名</h2>
+						<p>湖南處罰那樣還會感覺到適當司機論文出生兩種如果請點擊表情，開放一台生物會不會執行時間支持溫州微微因素十二動力中心他，不知繼續違反產權擴大更大，排行榜當天孤獨廠商結婚，能源豪華一個月之家滑鼠反，一部分。</p>
+						<button class="btn btn-outline-success">加入我們</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 bg-cover" style="background-image: url(/images/蘿蔔大根.jpg);">
+				<div class="row">
+					<div class="col-md-7 my-5 text-white ml-5 p-3" style="background-color: rgba(0,0,0,0.3);">
+						<small class="text-danger font-weight-bold">加入我們</small>
+						<h2 class="font-weight-bold">業務部助理一名</h2>
+						<p>湖南處罰那樣還會感覺到適當司機論文出生兩種如果請點擊表情，開放一台生物會不會執行時間支持溫州微微因素十二動力中心他，不知繼續違反產權擴大更大，排行榜當天孤獨廠商結婚，能源豪華一個月之家滑鼠反，一部分。</p>
+						<button class="btn btn-outline-success">加入我們</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  	<!--   	********************************11.*********************************** -->
+  	<section>
+		<div class="container">
+			<ul class="nav"><!-- https://getbootstrap.com/docs/4.6/components/navs/ -->
+			  <li class="nav-item">
+			    <a class="nav-link active" href="#">@大逸嚴選</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link disabled" href="#">facebook</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link disabled" href="#">購物網</a>
+			  </li>
+			</ul>			
+		</div>			
+	</section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>

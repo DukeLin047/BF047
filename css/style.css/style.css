@@ -1,0 +1,35 @@
+/*圖片對焦中心點*/
+.bg-cover{
+	background-position: center center;
+	background-size: cover;
+}
+.carousel-caption{
+	background-color: rgba(1, 1, 1, 0.3);
+	color:white;
+}
+/*銀幕縮到768px以下後出現黑色透明背景*/
+@media screen and (max-width: 768px){
+	.mytext{
+		background-color: rgba(0, 0, 0, 0.3);
+		color: white;
+		padding: 15px;
+		margin: 15px;
+	}
+} 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+    /* box-shadow: 3px 3px 5px 1px #757474; */
+}
+/*銀幕縮到1024px以上後影片置中*/
+@media screen and (min-width: 1024px){
+	.box-info{
+		width: 1100px;
+		/* background-color: rgba(0, 0, 0, 0.3); */
+		/* color: white;
+		padding: 15px; */
+		margin:auto;
+	}
+}
