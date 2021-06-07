@@ -7,4 +7,4 @@ window.addEventListener("scroll", ()  => {
     }else{
         header.style.boxShadow = "none";
     }
-}); 
+});
